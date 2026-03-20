@@ -1,30 +1,39 @@
- Sistema de Validação de Acesso em Java
-Este é um projeto desenvolvido para praticar os fundamentos da linguagem Java, focando em entrada de dados e estruturas condicionais. O sistema simula um controle de segurança para acesso a arquivos restritos.
+## MINI Sistema de Controle de Acesso (Multi-Language)
+
+Este repositório contém um desafio de lógica de programação implementado em Java e Python. O objetivo foi migrar a lógica de algoritmos (Portugol) para linguagens reais de mercado, praticando a sintaxe e a manipulação de dados em ambas.
 
 ---
- O que o programa faz?
-O sistema solicita o nome, a idade e o nível de acesso do usuário (1 a 3). Com base nessas informações, ele aplica as seguintes regras:
 
-Menores de idade: Acesso negado automaticamente, independente do nível.
+ O Projeto
+O sistema simula um portal de segurança para o "Arquivo X". Ele solicita dados do usuário e aplica regras de negócio baseadas em idade e níveis de permissão.
 
-Maiores de idade:
+---
 
-Nível 1 (Visitante): Permissão apenas de leitura.
+Regras de Negócio
+Validação de Maioridade: Se o usuário tiver menos de 18 anos, o acesso é negado imediatamente.
+
+Níveis de Acesso:
+
+Nível 1 (Visitante): Permissão de apenas leitura.
 
 Nível 2 (Colaborador): Permissão de leitura e escrita.
 
-Nível 3 (Admin): Acesso total liberado.
+Nível 3 (Admin): Acesso total ao sistema.
 
-Outros valores: Mensagem de erro para nível inválido.
+Tratamento de Erros: Caso um nível fora do intervalo 1-3 seja digitado, o sistema alerta o usuário.
+
+ Tecnologias e Aprendizados
+---
+Java ☕
+Uso da classe Scanner para entrada de dados.
+Estruturas de if/else aninhadas.
+Tipagem estática (declaração obrigatória de int, String, etc).
 
 ---
-🛠️ Tecnologias Utilizadas
-Java 25
 
-Scanner Library: Para interação com o usuário via console.
+Python 🐍
+Uso de input() com conversão de tipo (int()).
 
-Estruturas Condicionais: if, else if e else aninhados.
+Sintaxe baseada em indentação (sem chaves {}).
 
-
- Evolução Pessoal
-Este projeto marca a minha transição da lógica de programação em Portugol para a sintaxe real em Java. Foi um excelente exercício para entender a tipagem de dados (como String e int) e a importância de um código limpo e intuitivo para o usuário.
+Uso de elif para múltiplas condições.
